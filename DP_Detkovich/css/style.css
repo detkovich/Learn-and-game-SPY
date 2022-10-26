@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#app{
+    height: 100%;
+}
+#exit{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+#exit ul li a{
+  color: black;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #2ab7ca;
+}
+
+/* Lobby */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 450px;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    padding: 2px 16px;
+}
+.section_lobby{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/lobby.jpg);
+  background-size: cover;
+}
+.section_lobby h1{
+  font-size: 84px;
+  color: #000000de;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.section_lobby h1 span{
+  color: #860101;
+}
+.lobby-bg{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+  margin: 5px;
+}
+.card a img{
+  width: 450px;
+  height: 400px;
+  
+}
+/* Start page*/
+
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.row{
+    flex-direction: column;
+    
+}
+.item{
+    margin-bottom: 20px;
+}
+.jumbotron {
+    background-image: url(../img/backtoschool.jpg);
+    background-size: cover;
+    
+    
+
+}
+.container-sm {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 54px;
+    color: #964b00;
+}
+.form-signin {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group {
+    width: 100%;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+}
+.form-control:target{
+    background-color: bisque;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #b75f06cb;
+}
+.btn:hover{
+    
+    box-shadow:15px 15px 15px 4px rgba(0,0,0,0.06)
+}
+
+
+
+
+/*Математика */
+.container {
+  padding: 20px 10%;
+  overflow: hidden;
+  background: #fe4a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container h1 {
+  color: #fff;
+}
+
+.container ul {
+  list-style-type: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container li {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.container li a:hover{
+  color: #FFE340;
+  transition: 1s;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active::after {
+  content: "_";
+  background: #fff;
+  font-size: 4px;
+  display: block;
+}
+
+
+
+.equation {
+  font-size: 120px;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 100px 0;
+}
+
+.equation h1 {
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options {
+  font-size: 88px;
+  margin-right: 10px;
+}
+
+.answer-options h1 {
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#option1 {
+  background-color: #fe4a49;
+  transition: 1s;
+}
+
+#option1:hover {
+  background-color: #fff;
+  color: #fe4a49;
+}
+
+#option2 {
+  background-color: #2ab7ca;
+  transition: 1s;
+}
+
+#option2:hover {
+  background-color: #fff;
+  color: #2ab7ca;
+}
+
+#option3 {
+  background-color: #fed766;
+  transition: 1s;
+}
+
+#option3:hover {
+  background-color: #fff;
+  color: #fed766;
+}
+
+@media (max-width: 850px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .answer-options {
+    margin: 10px;
+  }
+
+  .answer-options h1 {
+    font-size: 4rem;
+    margin: auto;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .equation {
+    padding: 5rem;
+  }
+
+  .equation h1 {
+    font-size: 5rem;
+  }
+
+  #option1:hover{
+    background-color: #cf2b2b;
+    color: rgb(225, 216, 216);
+  }
+  
+  #option2:hover{
+    background-color: #157d8a;
+    color: rgb(236, 233, 233);
+  }
+  
+  #option3:hover{
+    background-color: #e4bf50;
+    color: rgb(218, 211, 211);
+  }
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 2.8rem;
+  }
+
+  .container ul {
+    font-size: 20px;
+  }
+
+  .container li {
+    padding: 0 5px;
+  }
+
+  .equation h1 {
+    padding: 20px 15px;
+    font-size: 3.5rem;
+  }
+
+  .answer-options h1 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+/* .................................memory cards */
+.section-cards {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #FFE340;
+}
+.container-header{
+  text-align: center;
+  font-size: 50px;
+  color: #EE3B80;
+}
+#sekundomers{
+  color: black;
+  font-size: 32px;
+}
+.nav-ul{
+  display: flex;
+  justify-content: center;
+ 
+}
+.nav-ul li{
+  list-style: none;
+  text-decoration: none;
+  margin: 10px 40px 0 40px;
+  color: rgba(96, 96, 247, 0.831);
+  
+}
+.nav-a{
+  text-decoration: none;
+  color: rgba(79, 79, 229, 0.831)
+}
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #EE3B80;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+/*Алфавит__________________________________________________- */
+.alphabet{
+  height: 100%;
+  background-color: #cf8181;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alphabet h1{
+  font-size: 5rem;
+  color: #4f8496;
+  font-family: "Montserrat", cursive;
+  text-shadow: 3px 0 #c70039;
+}
+.set {
+  margin: 5% 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.letter {
+  outline: none;
+  border: 10px solid #1b3569;
+  font-size: 3rem;
+  font-family: 'Montserrat', bold;
+  line-height: 2;
+  font-weight: 900;
+  color: #940a48;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  
+  width: 115px;
+  height: 115px;
+  text-align: center;
+  margin: 10px;
+  background-color: #cbf1f5;
+}
+
+.letter:hover{
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+@media (max-width: 900px) {
+  .container-fluid{
+    padding: 7% 15%;
+  }
+
+}
